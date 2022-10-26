@@ -63,7 +63,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "careerspace.wsgi.application"
 
 
-DATABASES = {
+DATABASE_URL = {
     'default': env.db(),    
     'extra': env.db_url(
         'SQLITE_URL',
