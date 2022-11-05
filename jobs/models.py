@@ -9,6 +9,10 @@ class Job(models.Model):
     description = models.TextField(_("Описание"))
     created_at = models.DateTimeField(_("Дата публикации"), auto_now=True)
 
+    class Meta:
+        verbose_name = _("Вакансия")
+        verbose_name_plural = _("Вакансии")
+
 
 class CompanyName(models.Model):
     name = models.CharField(_("Наименование компании"), max_length=200)

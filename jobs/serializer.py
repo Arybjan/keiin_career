@@ -1,14 +1,14 @@
 from rest_framework import serializers
-from jobs.models import Job, CompanyName
+from jobs import models
 
 
 class JobsSerializer(serializers.ModelSerializer):
     class Meta:
-        models = Job
+        model = models.Job
         fields = "__all__"
 
 
 class CompanyNameSerializer(serializers.ModelSerializer):
     class Meta:
-        models = CompanyName
+        model = models.CompanyName
         fields = "__all__"
