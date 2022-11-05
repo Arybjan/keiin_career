@@ -52,6 +52,14 @@ django = ">=3.0"
 pytz = "*"
 
 [[package]]
+name = "psycopg2-binary"
+version = "2.9.5"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "pytz"
 version = "2022.5"
 description = "World timezone definitions, modern and historical"
@@ -78,7 +86,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "39edbc6c62e4119cf76e238f7049f4d207a7bf47e33a0e5df66317fcaa73c455"
+content-hash = "71f286391b14fe46afea183edd21b2cd06afa593d5c7951a9aa690af45eb1efa"
 
 [metadata.files]
 asgiref = [
@@ -88,6 +96,7 @@ asgiref = [
 django = []
 django-environ = []
 djangorestframework = []
+psycopg2-binary = []
 pytz = []
 sqlparse = []
 tzdata = []
